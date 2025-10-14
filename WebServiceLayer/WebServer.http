@@ -1,0 +1,7 @@
+﻿@WebServer_HostAddress = http://localhost:5001
+
+GET {{WebServer_HostAddress}}/api/categories
+Accept: application/json
+
+###
+
