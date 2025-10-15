@@ -17,9 +17,6 @@ public class Program
 
         // Configure the HTTP request pipeline.
 
-        app.UseAuthorization();
-
-
         app.MapControllers();
 
         app.Run();
