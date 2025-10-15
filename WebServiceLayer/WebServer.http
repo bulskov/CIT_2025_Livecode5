@@ -5,3 +5,18 @@ Accept: application/json
 
 ###
 
+GET {{WebServer_HostAddress}}/api/categories/11
+Accept: application/json
+
+###
+
+POST {{WebServer_HostAddress}}/api/categories
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name":"test",
+  "description": "blah blah"
+}
+
+###

@@ -1,10 +1,12 @@
 ﻿
+using DataServiceLayer;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace WebServiceLayer;
 
 public class Program
-{
+{ 
+    public static DataService DataService{ get; } = new DataService();
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);

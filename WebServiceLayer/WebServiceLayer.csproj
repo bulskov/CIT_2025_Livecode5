@@ -8,10 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataServiceLayer.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\DataServiceLayer\DataServiceLayer.csproj" />
   </ItemGroup>
 
 </Project>
