@@ -9,7 +9,12 @@ namespace WebServiceLayer.Controllers;
 public class CategoriesController : ControllerBase
 {
 
-    DataService _dataService = Program.DataService;
+    IDataService _dataService;
+
+    public CategoriesController(IDataService dataService)
+    {
+        _dataService = dataService;
+    }
 
     [HttpGet]
     public IActionResult GetCategories()
@@ -44,5 +49,16 @@ public class CategoriesController : ControllerBase
         _dataService.CreateCategory(category);
 
         return Created();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteCategory(int id)
+    {
+        if (_dataService.DeleteCategory(id))
+        {
+            return NoContent();
+        }
+
+        return NotFound();
     }
 }

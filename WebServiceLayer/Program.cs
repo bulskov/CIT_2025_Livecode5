@@ -13,6 +13,8 @@ public class Program
 
         // Add services to the container.
 
+        builder.Services.AddSingleton<IDataService, DataService>();
+
         builder.Services.AddControllers();
 
         var app = builder.Build();
