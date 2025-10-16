@@ -5,13 +5,13 @@ Accept: application/json
 
 ###
 
-GET {{WebServer_HostAddress}}/api/categories/11
+GET {{WebServer_HostAddress}}/api/categories/1
 Accept: application/json
 
 ###
 
 
-DELETE {{WebServer_HostAddress}}/api/categories/1
+DELETE {{WebServer_HostAddress}}/api/categories/9
 Accept: application/json
 
 ###

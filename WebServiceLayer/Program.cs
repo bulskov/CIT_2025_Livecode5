@@ -1,6 +1,7 @@
 ﻿
 using DataServiceLayer;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Mapster;
 
 namespace WebServiceLayer;
 
@@ -14,6 +15,8 @@ public class Program
         // Add services to the container.
 
         builder.Services.AddSingleton<IDataService, DataService>();
+
+        builder.Services.AddMapster();
 
         builder.Services.AddControllers();
 
